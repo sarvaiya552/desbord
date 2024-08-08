@@ -31,7 +31,6 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    
     .sidebar {
       background-color: #4A274F;
     }
@@ -50,43 +49,51 @@
 
 
 
-    /* .content-wrapper {
-    
-     margin-top: 10px;
-    } */
 
-    .container-fluid {
-      top: 111px;
 
-      left: 332px;
-      width: 1169px;
-      height: 119px;
-      /* UI Properties */
+    .a_r {
+
+
+      position: relative;
+      width: 1100px;
+      height: 100px;
+
       background: transparent url('img/Full\ image\ \(3\).svg') 0% 0% no-repeat padding-box;
-      opacity: 1;
+      
       background-color: #F8EEFA;
+      background-size: contain;
+    }
+    @media (max-width: 500px) {
+      .a_r{
+       width: 500px;
+      }
     }
 
     .ooo {
       color: #43425D;
-      margin-left: 200px;
-      margin-top: 20px;
+     
+     
 
 
     }
 
     .btn {
-      margin-left: 550px;
+      margin-top: -30px;
+      margin-left: 850px;
       background-color: #442460;
       color: #FFFFFF;
-      width: 200px;
+     
     }
 
     .ccc {
-      margin-top: 150px;
-      margin-left: -580px;
-      font-size: 30px;
+      margin-top: 50px;
+      
+      
     }
+
+ 
+
+  
   </style>
 </head>
 
@@ -262,8 +269,8 @@
               <a href="#" class="nav-link " style="color: #FFD43B;">
                 <i class="fa-solid fa-chart-simple" style="color: #FFD43B; "></i>
                 <p>
-                Client  Dashboard
-                  <i class="right fas fa-angle-left"></i>
+                  Client Dashboard
+                  <i class="right fas fa-angle-right"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
@@ -292,7 +299,7 @@
                 <i class="fa-regular fa-envelope"></i>
                 <p>
                   Solutions
-                
+
                 </p>
               </a>
             </li>
@@ -305,7 +312,7 @@
                   <span class="badge"></span>
                 </p>
               </a>
-             
+
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -315,7 +322,7 @@
                   <i class="right fas "></i>
                 </p>
               </a>
-           
+
 
 
 
@@ -324,7 +331,7 @@
 
 
             </li>
-           
+
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-edit"></i>
@@ -333,7 +340,7 @@
                   <i class="fas  right"></i>
                 </p>
               </a>
-           
+
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -343,7 +350,7 @@
                   <i class="fas  right"></i>
                 </p>
               </a>
-              
+
             </li>
 
             <li class="nav-item">
@@ -359,18 +366,16 @@
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
       <div class=" content-header ">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6 ">
-              <div class="ooo">
-                <b class="sarvaiya">First Time Login</b>
-                <p class="rahul">Creat your first project & get started</p>
-
+        <div class=" a_r container-fluid">
+          <div class="row ">
+            <div class="  ">
+              <div class="" style="margin-left: 500px;">
+                <h3 class="font-weight-bold ">First Time Login</h3>
+                <p class="">Creat your first project & get started</p>
               </div>
-
             </div>
             <div class="ccc">
-              <b>User Experiance Mapping</b>
+              <h3>User Experiance Mapping</h3>
               <button type="button" class="btn btn"
                 style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                 Creat New Project
