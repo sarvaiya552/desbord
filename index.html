@@ -1,10 +1,249 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>IDEAL NEURO LAB</title>
+  <style>
+    aside {
+      background-color: #442460 !important;
+    }
+
+    .active {
+      color: #FFB900 !important;
+      background-color: #56396F !important;
+    }
+
+    .brand-link {
+      background-color: white;
+      font-weight: ;
+    }
+
+    .brand-text {
+      color: #442460;
+    }
+
+    .pink_box {
+      height: 130px !important;
+      background-color: #F8EEFA;
+    }
+
+    .img_cont {
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+    }
+
+    .img_head {
+      margin-left: 20%;
+      margin-top: -150px;
+      font-weight: 20px;
+    }
+
+    .img_para {
+      margin-left: 330px;
+      margin-top: -10px;
+      font-size: 20px;
+    }
+
+    .title_span {
+      width: 140px;
+      background-color: #442460;
+      color: white;
+      text-align: center;
+      padding: 7px 13px;
+      font-size: 13px;
+      border: none;
+      font-weight: lighter;
+      border-radius: 4px;
+    }
+
+
+    @media only screen and (min-width:300px) {
+      .pink_box {
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 1400px) {
+      .pink_box {
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (width: 320px) {
+      .img_head {
+        margin-top: -10px;
+        font-size: 10px;
+      }
+
+      .img_para {
+        margin-top: -10px;
+        font-size: 10px;
+        margin-left: 58px;
+      }
+
+      .pink_box {
+        height: 50px !important;
+        background-color: #F8EEFA;
+      }
+
+      .head {
+        font-size: 20px;
+      }
+    }
+
+    @media only screen and (width: 375px) {
+      .img_head {
+        margin-top: -10px;
+        font-size:10px;
+      }
+
+      .img_para {
+        margin-top: -10px;
+        font-size: 12px;
+        margin-left: 68px;
+      }
+
+      .pink_box {
+        height: 55px !important;
+        background-color: #F8EEFA;
+      }
+
+      .head {
+        font-size: 22px;
+      }
+    }
+
+    @media only screen and (width: 425px) {
+      .img_head {
+        margin-top: -26px;
+        font-size: 15px;
+      }
+
+      .img_para {
+        margin-top: -10px;
+        font-size: 15px;
+        margin-left: 77px;
+      }
+
+      .pink_box {
+        height: 80px !important;
+        background-color: #F8EEFA;
+      }
+
+      .head {
+        font-size: 26px;
+      }
+    }
+
+    @media only screen and (width: 768px) {
+      .img_head {
+        margin-top: -55px;
+        font-size: 16px;
+      }
+
+      .img_para {
+        margin-top: -10px;
+        font-size: 16px;
+        margin-left: 145px;
+      }
+
+      .pink_box {
+        height: 90px !important;
+        background-color: #F8EEFA;
+      }
+
+      .head {
+        font-size: 28px;
+      }
+    }
+
+    @media only screen and (width: 1024px) {
+      .img_head {
+        margin-top: -55px;
+        font-size: 16px;
+      }
+
+      .img_para {
+        margin-top: -10px;
+        font-size: 16px;
+        margin-left: 147px;
+      }
+
+      .pink_box {
+        height: 90px !important;
+        background-color: #F8EEFA;
+      }
+
+      .head {
+        font-size: 32px;
+      }
+    }
+
+    @media only screen and (width: 1440px) {
+      .img_head {
+        margin-top: -100px;
+        font-size: 22px;
+      }
+
+      .img_para {
+        margin-top: 20px !important;
+        font-size: 22px;
+        margin-left: 230px;
+      }
+
+      .pink_box {
+        height: 150px !important;
+        background-color: #F8EEFA;
+      }
+
+      .head {
+        font-size: 40px;
+      }
+    }
+
+    @media only screen and (width: 2560px) {
+      .img_head {
+        margin-top: 100px;
+        font-size: 40px;
+      }
+
+      .img_para {
+        margin-top: 100px;
+        font-size: 40px;
+        margin-left: 454px;
+      }
+
+      .pink_box {
+        height: 290px !important;
+        background-color: #F8EEFA;
+      }
+
+      .head {
+        font-size: 60px;
+      }
+
+      .title_span {
+        width: 200px;
+        background-color: #442460;
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 19px;
+        border: none;
+        font-weight: lighter;
+        border-radius: 4px;
+      }
+
+    }
+  </style>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
@@ -27,83 +266,11 @@
   <link rel="stylesheet" href="js/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="js/summernote/summernote-bs4.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    .sidebar {
-      background-color: #4A274F;
-    }
-
-    .control-sidebar {
-      background-color: #4A274F;
-    }
-
-    .brand-text {
-      color: #4A274F;
-    }
-
-    .brand-link {
-      background-color: white;
-    }
-
-
-
-
-
-    .a_r {
-
-
-      position: relative;
-      width: 1100px;
-      height: 100px;
-
-      background: url('img/Full\ image\ \(3\).svg')  no-repeat padding-box;
-      
-      background-color: #F8EEFA;
-      background-size: contain;
-    }
-    @media only screen and (max-width: 1158px){
-            .a_r{
-                width: 100%;
-                background-size: 100% 100%;
-
-                
-            }
-           
-            
-        }
-
-    .ooo {
-      color: #43425D;
-     
-     
-
-
-    }
-
-    .btn {
-      margin-top: -30px;
-      margin-left: 850px;
-      background-color: #442460;
-      color: #FFFFFF;
-     
-    }
-
-    .ccc {
-    
-      
-      
-    }
-
- 
-
-  
-  </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
+
 
 
     <!-- Navbar -->
@@ -134,15 +301,11 @@
             </form>
           </div>
         </li>
-
         </li>
-
       </ul>
 
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
-        <!-- Navbar Search -->
-
         <!-- Messages Dropdown Menu -->
         <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#">
@@ -246,7 +409,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="index3.html" class="brand-link">
-        <img src="img/Group 496 (6).svg" alt="AdminLTE Logo" class="brand-image " style="opacity: .8">
+        <img src="img/Group 496 (6).svg" alt="AdminLTE Logo" class="brand-image mt-1" style="opacity: .8">
         <span class="brand-text font-weight-light">NEURO LAB</span>
       </a>
 
@@ -255,7 +418,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
-            <img src="img/house (1).svg" class="" alt="User Image">
+            <img src="img/house (1).svg" class="h-50" style="width: 15px; align-items: center;" alt="User Image">
           </div>
           <div class="info">
             <a href="#" class="d-block">Home</a>
@@ -264,102 +427,75 @@
 
         <!-- SidebarSearch Form -->
 
-
         <!-- Sidebar Menu -->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item menu-">
-              <a href="#" class="nav-link " style="color: #FFD43B;">
-                <i class="fa-solid fa-chart-simple" style="color: #FFD43B; "></i>
+              <a href="#" class="nav-link active">
+                <img src="img/chart-bar-32 (1).svg" alt="graph">
                 <p>
                   Client Dashboard
                   <i class="right fas fa-angle-right"></i>
                 </p>
               </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="./index.html" class="nav-link active">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Dashboard v1</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./index2.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Dashboard v2</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./index3.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Dashboard v3</p>
-                  </a>
-                </li>
-              </ul>
+             
             </li>
+
+
             <li class="nav-item">
-              <a href="pages/widgets.html" class="nav-link">
-                <i class="fa-regular fa-envelope"></i>
+              <a href="#" class="nav-link">
+                <i class="nav-icon"><img src="img/email-84 (3).svg"></i>
                 <p>
                   Solutions
-
                 </p>
               </a>
+
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="fa-solid fa-earth-americas"></i>
+                <i class="nav-icon"><img src="img/receipt-list-42 (3).svg"></i>
                 <p>
                   Payment history
-                  <i class="fas  right"></i>
-                  <span class="badge"></span>
                 </p>
               </a>
 
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="fa-solid fa-dollar-sign"></i>
+                <i class="nav-icon"><img src="img/support-17 (2).svg"></i>
                 <p>
-                  Resource
-                  <i class="right fas "></i>
+                  Rsource
                 </p>
               </a>
 
-
-
-
-
-
-
-
             </li>
-
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-edit"></i>
+                <i class="nav-icon"><img src="img/$ (2).svg"></i>
                 <p>
                   Pricing
-                  <i class="fas  right"></i>
                 </p>
               </a>
-
             </li>
+
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="fa-solid fa-gear"></i>
+              <a class='nav-link' href='img/single-02 (2).svg'>
+                <i class="nav-icon"><img src="img/single-02 (2).svg"></i>
                 <p>
-                  Settings
-                  <i class="fas  right"></i>
+                  Help
                 </p>
               </a>
-
             </li>
-
             <li class="nav-item">
-
+              <a class='nav-link' href='/pages/kanban'>
+                <i class="nav-icon"><img src="img/settings-gear-64 (3).svg"></i>
+                <p>
+                  Setting
+                </p>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
@@ -367,59 +503,61 @@
       <!-- /.sidebar -->
     </aside>
 
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
-      <div class=" content-header ">
-        <div class=" a_r container-fluid">
-          <div class="row ">
-            <div class="  ">
-              <div class="row" style="margin-left: 500px;">
-                <h3 class="font-weight-bold col-6 ">First Time Login</h3>
-                <p class="col-">Creat your first project & get started</p>
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="pink_box">
+            <img src="img/Full image (3).svg" alt="dog" class="img_cont">
+            <h6 class="img_head">First Time Login</h6>
+            <p class="img_para">Creat your first project & get started</p>
+          </div><!-- /.col -->
+          <!-----------------main part--------------->
+          <section>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+                  <h2 class="head"><b>User Experiance Mapping</b></h2>
+                </div>
+                <div class="col-6 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end align-items-end">
+                  <span class="title_span">Create new project</span>
+                </div>
               </div>
             </div>
-            <div class="ccc row">
-              <h3>User Experiance Mapping</h3>
-              <button type="button" class="btn btn col-3"
-                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                Creat New Project
-              </button>
-            </div>
-
-            <!-- /.col -->
-            <!-- /.col -->
-          </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-      </div>
-      <!-- /.content-header -->
-
-      <!-- Main content -->
-
-      <!-- /.content -->
+          </section>
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content-wrapper -->
-    <footer class="main-footer">
-      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-      All rights reserved.
-      <div class="float-right d-none d-sm-inline-block">
-        <b>Version</b> 3.2.0-rc
-      </div>
-    </footer>
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
+    <!-- /.content-header -->
+
+    <!-- /.content -->
+  </div>
+
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">NEURO LAB.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0-rc
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
   </div>
   <!-- ./wrapper -->
 
   <!-- jQuery -->
   <script src="js/jquery/jquery.min.js"></script>
   <!-- jQuery UI 1.11.4 -->
-  <script src="js/jquery-ui/jquery-ui.min.js"></script>
-  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
   <script>
     $.widget.bridge('uibutton', $.ui.button)
   </script>
